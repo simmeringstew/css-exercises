@@ -4,25 +4,76 @@ body {
   min-height: 100vh;
 }
 
+ul {
+  list-style-type: none;
+  font-size: 24px;
+  margin-left: -40px;
+  margin-top: -10px;
+}
+
+li {
+  padding-bottom: 16px;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.header-text {
+  margin-left: 16px;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
-}
-
-.sidebar {
-  width: 300px;
-  background: royalblue;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 250px;
+  height: 300px;
+  padding: 32px;
+}
+
+/* Everything above this is fine */
+
+.sidebar {
+  flex-shrink: 0;
+  width: 300px;
+  background: royalblue;
+  display: flex;
+  padding: 16px;
+}
+
+.cards {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  margin: 32px;
+  gap: 32px;
+}
+
+.content {
+  display: flex;
+  height: 870px;
 }
