@@ -30,6 +30,11 @@
   text-align: left;
 }
 
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .menu ul,
 .menu li {
   font-size: 16px;
@@ -60,9 +65,15 @@
   background-color: #FF7755;
 }
 
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .article {
